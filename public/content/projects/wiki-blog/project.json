@@ -1,0 +1,9 @@
+{
+  "title": "Wiki 个人笔记库",
+  "summary": "本站自己：React + Ant Design 搭建的笔记博客，支持亮暗模式、Markdown 渲染、代码片段浏览与 PDF 阅读",
+  "stack": ["React", "TypeScript", "Vite", "Ant Design"],
+  "repoUrl": null,
+  "demoUrl": null,
+  "embedable": false,
+  "updatedAt": "2026-11-26"
+}

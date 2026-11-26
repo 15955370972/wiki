@@ -1,0 +1,3238 @@
+{
+  "tab": "SANITATION",
+  "unit": "万元",
+  "provinces": [
+    {
+      "provinceName": "河北省",
+      "summary": {
+        "operationVehicles": 83,
+        "operationRevenue": 690
+      },
+      "projects": [
+        {
+          "projectName": "石家庄环卫一体化运营项目",
+          "cityName": "石家庄",
+          "sortOrder": 1,
+          "coord": [
+            114.520828,
+            38.048684
+          ],
+          "revenueItems": [
+            {
+              "key": "作业车辆",
+              "value": 52,
+              "unit": "辆"
+            },
+            {
+              "key": "环卫运营收入",
+              "value": 430
+            }
+          ],
+          "detailData": {
+            "projectName": "石家庄环卫一体化运营项目",
+            "sections": [
+              {
+                "label": "基本信息",
+                "items": [
+                  {
+                    "label": "项目经理",
+                    "value": "李卫国"
+                  },
+                  {
+                    "label": "年合同额",
+                    "value": "5,160.00",
+                    "unit": "万元"
+                  }
+                ]
+              },
+              {
+                "label": "经营数据",
+                "unit": "万元",
+                "items": [
+                  {
+                    "label": "营收",
+                    "value": "430.00",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "毛利率",
+                    "value": "20.00",
+                    "unit": "%",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "逾期应收",
+                    "value": "86.00"
+                  },
+                  {
+                    "label": "回款率",
+                    "value": "15.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "成本指标",
+                "items": [
+                  {
+                    "label": "人工成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "人工占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "运营指标",
+                "items": [
+                  {
+                    "label": "作业人员",
+                    "value": 110
+                  },
+                  {
+                    "label": "车辆",
+                    "value": 52,
+                    "unit": "台"
+                  },
+                  {
+                    "label": "其中无人车辆",
+                    "value": 21,
+                    "unit": "台"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "projectName": "唐山市容环境综合服务项目",
+          "cityName": "唐山",
+          "sortOrder": 2,
+          "coord": [
+            118.1802,
+            39.6309
+          ],
+          "revenueItems": [
+            {
+              "key": "作业车辆",
+              "value": 31,
+              "unit": "辆"
+            },
+            {
+              "key": "环卫运营收入",
+              "value": 260
+            }
+          ],
+          "detailData": {
+            "projectName": "唐山市容环境综合服务项目",
+            "sections": [
+              {
+                "label": "基本信息",
+                "items": [
+                  {
+                    "label": "项目经理",
+                    "value": "王建华"
+                  },
+                  {
+                    "label": "年合同额",
+                    "value": "3,120.00",
+                    "unit": "万元"
+                  }
+                ]
+              },
+              {
+                "label": "经营数据",
+                "unit": "万元",
+                "items": [
+                  {
+                    "label": "营收",
+                    "value": "260.00",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "毛利率",
+                    "value": "20.00",
+                    "unit": "%",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "逾期应收",
+                    "value": "52.00"
+                  },
+                  {
+                    "label": "回款率",
+                    "value": "15.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "成本指标",
+                "items": [
+                  {
+                    "label": "人工成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "人工占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "运营指标",
+                "items": [
+                  {
+                    "label": "作业人员",
+                    "value": 68
+                  },
+                  {
+                    "label": "车辆",
+                    "value": 31,
+                    "unit": "台"
+                  },
+                  {
+                    "label": "其中无人车辆",
+                    "value": 12,
+                    "unit": "台"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "provinceName": "山东省",
+      "summary": {
+        "operationVehicles": 77,
+        "operationRevenue": 650
+      },
+      "projects": [
+        {
+          "projectName": "济南城乡环卫一体化项目",
+          "cityName": "济南",
+          "sortOrder": 1,
+          "coord": [
+            117.194778,
+            36.652148
+          ],
+          "revenueItems": [
+            {
+              "key": "作业车辆",
+              "value": 48,
+              "unit": "辆"
+            },
+            {
+              "key": "环卫运营收入",
+              "value": 400
+            }
+          ],
+          "detailData": {
+            "projectName": "济南城乡环卫一体化项目",
+            "sections": [
+              {
+                "label": "基本信息",
+                "items": [
+                  {
+                    "label": "项目经理",
+                    "value": "张志强"
+                  },
+                  {
+                    "label": "年合同额",
+                    "value": "4,800.00",
+                    "unit": "万元"
+                  }
+                ]
+              },
+              {
+                "label": "经营数据",
+                "unit": "万元",
+                "items": [
+                  {
+                    "label": "营收",
+                    "value": "400.00",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "毛利率",
+                    "value": "20.00",
+                    "unit": "%",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "逾期应收",
+                    "value": "80.00"
+                  },
+                  {
+                    "label": "回款率",
+                    "value": "15.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "成本指标",
+                "items": [
+                  {
+                    "label": "人工成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "人工占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "运营指标",
+                "items": [
+                  {
+                    "label": "作业人员",
+                    "value": 102
+                  },
+                  {
+                    "label": "车辆",
+                    "value": 48,
+                    "unit": "台"
+                  },
+                  {
+                    "label": "其中无人车辆",
+                    "value": 19,
+                    "unit": "台"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "projectName": "青岛市政清扫保洁项目",
+          "cityName": "青岛",
+          "sortOrder": 2,
+          "coord": [
+            120.389445,
+            36.072358
+          ],
+          "revenueItems": [
+            {
+              "key": "作业车辆",
+              "value": 29,
+              "unit": "辆"
+            },
+            {
+              "key": "环卫运营收入",
+              "value": 250
+            }
+          ],
+          "detailData": {
+            "projectName": "青岛市政清扫保洁项目",
+            "sections": [
+              {
+                "label": "基本信息",
+                "items": [
+                  {
+                    "label": "项目经理",
+                    "value": "刘明辉"
+                  },
+                  {
+                    "label": "年合同额",
+                    "value": "3,000.00",
+                    "unit": "万元"
+                  }
+                ]
+              },
+              {
+                "label": "经营数据",
+                "unit": "万元",
+                "items": [
+                  {
+                    "label": "营收",
+                    "value": "250.00",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "毛利率",
+                    "value": "20.00",
+                    "unit": "%",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "逾期应收",
+                    "value": "50.00"
+                  },
+                  {
+                    "label": "回款率",
+                    "value": "15.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "成本指标",
+                "items": [
+                  {
+                    "label": "人工成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "人工占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "运营指标",
+                "items": [
+                  {
+                    "label": "作业人员",
+                    "value": 64
+                  },
+                  {
+                    "label": "车辆",
+                    "value": 29,
+                    "unit": "台"
+                  },
+                  {
+                    "label": "其中无人车辆",
+                    "value": 12,
+                    "unit": "台"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "provinceName": "北京市",
+      "summary": {
+        "operationVehicles": 94,
+        "operationRevenue": 780
+      },
+      "projects": [
+        {
+          "projectName": "北京道路机械化清扫项目",
+          "cityName": "北京",
+          "sortOrder": 1,
+          "coord": [
+            116.403694,
+            39.949459
+          ],
+          "revenueItems": [
+            {
+              "key": "作业车辆",
+              "value": 94,
+              "unit": "辆"
+            },
+            {
+              "key": "环卫运营收入",
+              "value": 780
+            }
+          ],
+          "detailData": {
+            "projectName": "北京道路机械化清扫项目",
+            "sections": [
+              {
+                "label": "基本信息",
+                "items": [
+                  {
+                    "label": "项目经理",
+                    "value": "陈永康"
+                  },
+                  {
+                    "label": "年合同额",
+                    "value": "9,360.00",
+                    "unit": "万元"
+                  }
+                ]
+              },
+              {
+                "label": "经营数据",
+                "unit": "万元",
+                "items": [
+                  {
+                    "label": "营收",
+                    "value": "780.00",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "毛利率",
+                    "value": "20.00",
+                    "unit": "%",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "逾期应收",
+                    "value": "156.00"
+                  },
+                  {
+                    "label": "回款率",
+                    "value": "15.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "成本指标",
+                "items": [
+                  {
+                    "label": "人工成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "人工占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "运营指标",
+                "items": [
+                  {
+                    "label": "作业人员",
+                    "value": 194
+                  },
+                  {
+                    "label": "车辆",
+                    "value": 94,
+                    "unit": "台"
+                  },
+                  {
+                    "label": "其中无人车辆",
+                    "value": 38,
+                    "unit": "台"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "provinceName": "天津市",
+      "summary": {
+        "operationVehicles": 86,
+        "operationRevenue": 720
+      },
+      "projects": [
+        {
+          "projectName": "天津环卫一体化服务项目",
+          "cityName": "天津",
+          "sortOrder": 1,
+          "coord": [
+            117.286764,
+            39.001295
+          ],
+          "revenueItems": [
+            {
+              "key": "作业车辆",
+              "value": 86,
+              "unit": "辆"
+            },
+            {
+              "key": "环卫运营收入",
+              "value": 720
+            }
+          ],
+          "detailData": {
+            "projectName": "天津环卫一体化服务项目",
+            "sections": [
+              {
+                "label": "基本信息",
+                "items": [
+                  {
+                    "label": "项目经理",
+                    "value": "赵国庆"
+                  },
+                  {
+                    "label": "年合同额",
+                    "value": "8,640.00",
+                    "unit": "万元"
+                  }
+                ]
+              },
+              {
+                "label": "经营数据",
+                "unit": "万元",
+                "items": [
+                  {
+                    "label": "营收",
+                    "value": "720.00",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "毛利率",
+                    "value": "20.00",
+                    "unit": "%",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "逾期应收",
+                    "value": "144.00"
+                  },
+                  {
+                    "label": "回款率",
+                    "value": "15.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "成本指标",
+                "items": [
+                  {
+                    "label": "人工成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "人工占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "运营指标",
+                "items": [
+                  {
+                    "label": "作业人员",
+                    "value": 178
+                  },
+                  {
+                    "label": "车辆",
+                    "value": 86,
+                    "unit": "台"
+                  },
+                  {
+                    "label": "其中无人车辆",
+                    "value": 34,
+                    "unit": "台"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "provinceName": "辽宁省",
+      "summary": {
+        "operationVehicles": 59,
+        "operationRevenue": 500
+      },
+      "projects": [
+        {
+          "projectName": "沈阳城乡环卫一体化项目",
+          "cityName": "沈阳",
+          "sortOrder": 1,
+          "coord": [
+            123.486653,
+            41.682522
+          ],
+          "revenueItems": [
+            {
+              "key": "作业车辆",
+              "value": 38,
+              "unit": "辆"
+            },
+            {
+              "key": "环卫运营收入",
+              "value": 320
+            }
+          ],
+          "detailData": {
+            "projectName": "沈阳城乡环卫一体化项目",
+            "sections": [
+              {
+                "label": "基本信息",
+                "items": [
+                  {
+                    "label": "项目经理",
+                    "value": "李卫国"
+                  },
+                  {
+                    "label": "年合同额",
+                    "value": "3,840.00",
+                    "unit": "万元"
+                  }
+                ]
+              },
+              {
+                "label": "经营数据",
+                "unit": "万元",
+                "items": [
+                  {
+                    "label": "营收",
+                    "value": "320.00",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "毛利率",
+                    "value": "20.00",
+                    "unit": "%",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "逾期应收",
+                    "value": "64.00"
+                  },
+                  {
+                    "label": "回款率",
+                    "value": "15.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "成本指标",
+                "items": [
+                  {
+                    "label": "人工成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "人工占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "运营指标",
+                "items": [
+                  {
+                    "label": "作业人员",
+                    "value": 82
+                  },
+                  {
+                    "label": "车辆",
+                    "value": 38,
+                    "unit": "台"
+                  },
+                  {
+                    "label": "其中无人车辆",
+                    "value": 15,
+                    "unit": "台"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "projectName": "大连海岸线环卫保洁项目",
+          "cityName": "大连",
+          "sortOrder": 2,
+          "coord": [
+            121.621391,
+            38.919345
+          ],
+          "revenueItems": [
+            {
+              "key": "作业车辆",
+              "value": 21,
+              "unit": "辆"
+            },
+            {
+              "key": "环卫运营收入",
+              "value": 180
+            }
+          ],
+          "detailData": {
+            "projectName": "大连海岸线环卫保洁项目",
+            "sections": [
+              {
+                "label": "基本信息",
+                "items": [
+                  {
+                    "label": "项目经理",
+                    "value": "王建华"
+                  },
+                  {
+                    "label": "年合同额",
+                    "value": "2,160.00",
+                    "unit": "万元"
+                  }
+                ]
+              },
+              {
+                "label": "经营数据",
+                "unit": "万元",
+                "items": [
+                  {
+                    "label": "营收",
+                    "value": "180.00",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "毛利率",
+                    "value": "20.00",
+                    "unit": "%",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "逾期应收",
+                    "value": "36.00"
+                  },
+                  {
+                    "label": "回款率",
+                    "value": "15.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "成本指标",
+                "items": [
+                  {
+                    "label": "人工成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "人工占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "运营指标",
+                "items": [
+                  {
+                    "label": "作业人员",
+                    "value": 48
+                  },
+                  {
+                    "label": "车辆",
+                    "value": 21,
+                    "unit": "台"
+                  },
+                  {
+                    "label": "其中无人车辆",
+                    "value": 8,
+                    "unit": "台"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "provinceName": "山西省",
+      "summary": {
+        "operationVehicles": 70,
+        "operationRevenue": 580
+      },
+      "projects": [
+        {
+          "projectName": "太原环卫一体化运营项目",
+          "cityName": "太原",
+          "sortOrder": 1,
+          "coord": [
+            112.595453,
+            37.858034
+          ],
+          "revenueItems": [
+            {
+              "key": "作业车辆",
+              "value": 70,
+              "unit": "辆"
+            },
+            {
+              "key": "环卫运营收入",
+              "value": 580
+            }
+          ],
+          "detailData": {
+            "projectName": "太原环卫一体化运营项目",
+            "sections": [
+              {
+                "label": "基本信息",
+                "items": [
+                  {
+                    "label": "项目经理",
+                    "value": "张志强"
+                  },
+                  {
+                    "label": "年合同额",
+                    "value": "6,960.00",
+                    "unit": "万元"
+                  }
+                ]
+              },
+              {
+                "label": "经营数据",
+                "unit": "万元",
+                "items": [
+                  {
+                    "label": "营收",
+                    "value": "580.00",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "毛利率",
+                    "value": "20.00",
+                    "unit": "%",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "逾期应收",
+                    "value": "116.00"
+                  },
+                  {
+                    "label": "回款率",
+                    "value": "15.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "成本指标",
+                "items": [
+                  {
+                    "label": "人工成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "人工占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "运营指标",
+                "items": [
+                  {
+                    "label": "作业人员",
+                    "value": 146
+                  },
+                  {
+                    "label": "车辆",
+                    "value": 70,
+                    "unit": "台"
+                  },
+                  {
+                    "label": "其中无人车辆",
+                    "value": 28,
+                    "unit": "台"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "provinceName": "河南省",
+      "summary": {
+        "operationVehicles": 48,
+        "operationRevenue": 410
+      },
+      "projects": [
+        {
+          "projectName": "郑州道路清扫保洁项目",
+          "cityName": "郑州",
+          "sortOrder": 1,
+          "coord": [
+            113.644099,
+            34.769161
+          ],
+          "revenueItems": [
+            {
+              "key": "作业车辆",
+              "value": 33,
+              "unit": "辆"
+            },
+            {
+              "key": "环卫运营收入",
+              "value": 280
+            }
+          ],
+          "detailData": {
+            "projectName": "郑州道路清扫保洁项目",
+            "sections": [
+              {
+                "label": "基本信息",
+                "items": [
+                  {
+                    "label": "项目经理",
+                    "value": "刘明辉"
+                  },
+                  {
+                    "label": "年合同额",
+                    "value": "3,360.00",
+                    "unit": "万元"
+                  }
+                ]
+              },
+              {
+                "label": "经营数据",
+                "unit": "万元",
+                "items": [
+                  {
+                    "label": "营收",
+                    "value": "280.00",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "毛利率",
+                    "value": "20.00",
+                    "unit": "%",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "逾期应收",
+                    "value": "56.00"
+                  },
+                  {
+                    "label": "回款率",
+                    "value": "15.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "成本指标",
+                "items": [
+                  {
+                    "label": "人工成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "人工占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "运营指标",
+                "items": [
+                  {
+                    "label": "作业人员",
+                    "value": 72
+                  },
+                  {
+                    "label": "车辆",
+                    "value": 33,
+                    "unit": "台"
+                  },
+                  {
+                    "label": "其中无人车辆",
+                    "value": 13,
+                    "unit": "台"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "projectName": "洛阳城乡环卫服务项目",
+          "cityName": "洛阳",
+          "sortOrder": 2,
+          "coord": [
+            112.434468,
+            34.663041
+          ],
+          "revenueItems": [
+            {
+              "key": "作业车辆",
+              "value": 15,
+              "unit": "辆"
+            },
+            {
+              "key": "环卫运营收入",
+              "value": 130
+            }
+          ],
+          "detailData": {
+            "projectName": "洛阳城乡环卫服务项目",
+            "sections": [
+              {
+                "label": "基本信息",
+                "items": [
+                  {
+                    "label": "项目经理",
+                    "value": "陈永康"
+                  },
+                  {
+                    "label": "年合同额",
+                    "value": "1,560.00",
+                    "unit": "万元"
+                  }
+                ]
+              },
+              {
+                "label": "经营数据",
+                "unit": "万元",
+                "items": [
+                  {
+                    "label": "营收",
+                    "value": "130.00",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "毛利率",
+                    "value": "20.00",
+                    "unit": "%",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "逾期应收",
+                    "value": "26.00"
+                  },
+                  {
+                    "label": "回款率",
+                    "value": "15.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "成本指标",
+                "items": [
+                  {
+                    "label": "人工成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "人工占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "运营指标",
+                "items": [
+                  {
+                    "label": "作业人员",
+                    "value": 36
+                  },
+                  {
+                    "label": "车辆",
+                    "value": 15,
+                    "unit": "台"
+                  },
+                  {
+                    "label": "其中无人车辆",
+                    "value": 6,
+                    "unit": "台"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "provinceName": "江苏省",
+      "summary": {
+        "operationVehicles": 46,
+        "operationRevenue": 390
+      },
+      "projects": [
+        {
+          "projectName": "南京环卫一体化运营项目",
+          "cityName": "南京",
+          "sortOrder": 1,
+          "coord": [
+            118.832137,
+            32.038322
+          ],
+          "revenueItems": [
+            {
+              "key": "作业车辆",
+              "value": 30,
+              "unit": "辆"
+            },
+            {
+              "key": "环卫运营收入",
+              "value": 260
+            }
+          ],
+          "detailData": {
+            "projectName": "南京环卫一体化运营项目",
+            "sections": [
+              {
+                "label": "基本信息",
+                "items": [
+                  {
+                    "label": "项目经理",
+                    "value": "赵国庆"
+                  },
+                  {
+                    "label": "年合同额",
+                    "value": "3,120.00",
+                    "unit": "万元"
+                  }
+                ]
+              },
+              {
+                "label": "经营数据",
+                "unit": "万元",
+                "items": [
+                  {
+                    "label": "营收",
+                    "value": "260.00",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "毛利率",
+                    "value": "20.00",
+                    "unit": "%",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "逾期应收",
+                    "value": "52.00"
+                  },
+                  {
+                    "label": "回款率",
+                    "value": "15.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "成本指标",
+                "items": [
+                  {
+                    "label": "人工成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "人工占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "运营指标",
+                "items": [
+                  {
+                    "label": "作业人员",
+                    "value": 66
+                  },
+                  {
+                    "label": "车辆",
+                    "value": 30,
+                    "unit": "台"
+                  },
+                  {
+                    "label": "其中无人车辆",
+                    "value": 12,
+                    "unit": "台"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "projectName": "苏州工业园区环卫项目",
+          "cityName": "苏州",
+          "sortOrder": 2,
+          "coord": [
+            120.589613,
+            31.304566
+          ],
+          "revenueItems": [
+            {
+              "key": "作业车辆",
+              "value": 16,
+              "unit": "辆"
+            },
+            {
+              "key": "环卫运营收入",
+              "value": 130
+            }
+          ],
+          "detailData": {
+            "projectName": "苏州工业园区环卫项目",
+            "sections": [
+              {
+                "label": "基本信息",
+                "items": [
+                  {
+                    "label": "项目经理",
+                    "value": "李卫国"
+                  },
+                  {
+                    "label": "年合同额",
+                    "value": "1,560.00",
+                    "unit": "万元"
+                  }
+                ]
+              },
+              {
+                "label": "经营数据",
+                "unit": "万元",
+                "items": [
+                  {
+                    "label": "营收",
+                    "value": "130.00",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "毛利率",
+                    "value": "20.00",
+                    "unit": "%",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "逾期应收",
+                    "value": "26.00"
+                  },
+                  {
+                    "label": "回款率",
+                    "value": "15.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "成本指标",
+                "items": [
+                  {
+                    "label": "人工成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "人工占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "运营指标",
+                "items": [
+                  {
+                    "label": "作业人员",
+                    "value": 38
+                  },
+                  {
+                    "label": "车辆",
+                    "value": 16,
+                    "unit": "台"
+                  },
+                  {
+                    "label": "其中无人车辆",
+                    "value": 6,
+                    "unit": "台"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "provinceName": "安徽省",
+      "summary": {
+        "operationVehicles": 40,
+        "operationRevenue": 340
+      },
+      "projects": [
+        {
+          "projectName": "合肥城市环卫一体化项目",
+          "cityName": "合肥",
+          "sortOrder": 1,
+          "coord": [
+            117.194778,
+            31.86577
+          ],
+          "revenueItems": [
+            {
+              "key": "作业车辆",
+              "value": 27,
+              "unit": "辆"
+            },
+            {
+              "key": "环卫运营收入",
+              "value": 230
+            }
+          ],
+          "detailData": {
+            "projectName": "合肥城市环卫一体化项目",
+            "sections": [
+              {
+                "label": "基本信息",
+                "items": [
+                  {
+                    "label": "项目经理",
+                    "value": "王建华"
+                  },
+                  {
+                    "label": "年合同额",
+                    "value": "2,760.00",
+                    "unit": "万元"
+                  }
+                ]
+              },
+              {
+                "label": "经营数据",
+                "unit": "万元",
+                "items": [
+                  {
+                    "label": "营收",
+                    "value": "230.00",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "毛利率",
+                    "value": "20.00",
+                    "unit": "%",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "逾期应收",
+                    "value": "46.00"
+                  },
+                  {
+                    "label": "回款率",
+                    "value": "15.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "成本指标",
+                "items": [
+                  {
+                    "label": "人工成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "人工占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "运营指标",
+                "items": [
+                  {
+                    "label": "作业人员",
+                    "value": 60
+                  },
+                  {
+                    "label": "车辆",
+                    "value": 27,
+                    "unit": "台"
+                  },
+                  {
+                    "label": "其中无人车辆",
+                    "value": 11,
+                    "unit": "台"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "projectName": "芜湖市政环卫服务项目",
+          "cityName": "芜湖",
+          "sortOrder": 2,
+          "coord": [
+            118.22,
+            31.19
+          ],
+          "revenueItems": [
+            {
+              "key": "作业车辆",
+              "value": 13,
+              "unit": "辆"
+            },
+            {
+              "key": "环卫运营收入",
+              "value": 110
+            }
+          ],
+          "detailData": {
+            "projectName": "芜湖市政环卫服务项目",
+            "sections": [
+              {
+                "label": "基本信息",
+                "items": [
+                  {
+                    "label": "项目经理",
+                    "value": "张志强"
+                  },
+                  {
+                    "label": "年合同额",
+                    "value": "1,320.00",
+                    "unit": "万元"
+                  }
+                ]
+              },
+              {
+                "label": "经营数据",
+                "unit": "万元",
+                "items": [
+                  {
+                    "label": "营收",
+                    "value": "110.00",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "毛利率",
+                    "value": "20.00",
+                    "unit": "%",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "逾期应收",
+                    "value": "22.00"
+                  },
+                  {
+                    "label": "回款率",
+                    "value": "15.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "成本指标",
+                "items": [
+                  {
+                    "label": "人工成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "人工占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "运营指标",
+                "items": [
+                  {
+                    "label": "作业人员",
+                    "value": 32
+                  },
+                  {
+                    "label": "车辆",
+                    "value": 13,
+                    "unit": "台"
+                  },
+                  {
+                    "label": "其中无人车辆",
+                    "value": 5,
+                    "unit": "台"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "provinceName": "上海市",
+      "summary": {
+        "operationVehicles": 47,
+        "operationRevenue": 390
+      },
+      "projects": [
+        {
+          "projectName": "上海城市环卫运营项目",
+          "cityName": "上海",
+          "sortOrder": 1,
+          "coord": [
+            121.487899,
+            31.249162
+          ],
+          "revenueItems": [
+            {
+              "key": "作业车辆",
+              "value": 47,
+              "unit": "辆"
+            },
+            {
+              "key": "环卫运营收入",
+              "value": 390
+            }
+          ],
+          "detailData": {
+            "projectName": "上海城市环卫运营项目",
+            "sections": [
+              {
+                "label": "基本信息",
+                "items": [
+                  {
+                    "label": "项目经理",
+                    "value": "刘明辉"
+                  },
+                  {
+                    "label": "年合同额",
+                    "value": "4,680.00",
+                    "unit": "万元"
+                  }
+                ]
+              },
+              {
+                "label": "经营数据",
+                "unit": "万元",
+                "items": [
+                  {
+                    "label": "营收",
+                    "value": "390.00",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "毛利率",
+                    "value": "20.00",
+                    "unit": "%",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "逾期应收",
+                    "value": "78.00"
+                  },
+                  {
+                    "label": "回款率",
+                    "value": "15.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "成本指标",
+                "items": [
+                  {
+                    "label": "人工成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "人工占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "运营指标",
+                "items": [
+                  {
+                    "label": "作业人员",
+                    "value": 100
+                  },
+                  {
+                    "label": "车辆",
+                    "value": 47,
+                    "unit": "台"
+                  },
+                  {
+                    "label": "其中无人车辆",
+                    "value": 19,
+                    "unit": "台"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "provinceName": "浙江省",
+      "summary": {
+        "operationVehicles": 33,
+        "operationRevenue": 280
+      },
+      "projects": [
+        {
+          "projectName": "杭州环卫一体化服务项目",
+          "cityName": "杭州",
+          "sortOrder": 1,
+          "coord": [
+            120.211934,
+            30.274265
+          ],
+          "revenueItems": [
+            {
+              "key": "作业车辆",
+              "value": 23,
+              "unit": "辆"
+            },
+            {
+              "key": "环卫运营收入",
+              "value": 190
+            }
+          ],
+          "detailData": {
+            "projectName": "杭州环卫一体化服务项目",
+            "sections": [
+              {
+                "label": "基本信息",
+                "items": [
+                  {
+                    "label": "项目经理",
+                    "value": "陈永康"
+                  },
+                  {
+                    "label": "年合同额",
+                    "value": "2,280.00",
+                    "unit": "万元"
+                  }
+                ]
+              },
+              {
+                "label": "经营数据",
+                "unit": "万元",
+                "items": [
+                  {
+                    "label": "营收",
+                    "value": "190.00",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "毛利率",
+                    "value": "20.00",
+                    "unit": "%",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "逾期应收",
+                    "value": "38.00"
+                  },
+                  {
+                    "label": "回款率",
+                    "value": "15.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "成本指标",
+                "items": [
+                  {
+                    "label": "人工成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "人工占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "运营指标",
+                "items": [
+                  {
+                    "label": "作业人员",
+                    "value": 52
+                  },
+                  {
+                    "label": "车辆",
+                    "value": 23,
+                    "unit": "台"
+                  },
+                  {
+                    "label": "其中无人车辆",
+                    "value": 9,
+                    "unit": "台"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "projectName": "宁波港区环卫保洁项目",
+          "cityName": "宁波",
+          "sortOrder": 2,
+          "coord": [
+            121.556686,
+            29.880177
+          ],
+          "revenueItems": [
+            {
+              "key": "作业车辆",
+              "value": 10,
+              "unit": "辆"
+            },
+            {
+              "key": "环卫运营收入",
+              "value": 90
+            }
+          ],
+          "detailData": {
+            "projectName": "宁波港区环卫保洁项目",
+            "sections": [
+              {
+                "label": "基本信息",
+                "items": [
+                  {
+                    "label": "项目经理",
+                    "value": "赵国庆"
+                  },
+                  {
+                    "label": "年合同额",
+                    "value": "1,080.00",
+                    "unit": "万元"
+                  }
+                ]
+              },
+              {
+                "label": "经营数据",
+                "unit": "万元",
+                "items": [
+                  {
+                    "label": "营收",
+                    "value": "90.00",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "毛利率",
+                    "value": "20.00",
+                    "unit": "%",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "逾期应收",
+                    "value": "18.00"
+                  },
+                  {
+                    "label": "回款率",
+                    "value": "15.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "成本指标",
+                "items": [
+                  {
+                    "label": "人工成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "人工占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "运营指标",
+                "items": [
+                  {
+                    "label": "作业人员",
+                    "value": 26
+                  },
+                  {
+                    "label": "车辆",
+                    "value": 10,
+                    "unit": "台"
+                  },
+                  {
+                    "label": "其中无人车辆",
+                    "value": 4,
+                    "unit": "台"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "provinceName": "湖北省",
+      "summary": {
+        "operationVehicles": 19,
+        "operationRevenue": 160
+      },
+      "projects": [
+        {
+          "projectName": "武汉环卫一体化运营项目",
+          "cityName": "武汉",
+          "sortOrder": 1,
+          "coord": [
+            114.361594,
+            30.601078
+          ],
+          "revenueItems": [
+            {
+              "key": "作业车辆",
+              "value": 19,
+              "unit": "辆"
+            },
+            {
+              "key": "环卫运营收入",
+              "value": 160
+            }
+          ],
+          "detailData": {
+            "projectName": "武汉环卫一体化运营项目",
+            "sections": [
+              {
+                "label": "基本信息",
+                "items": [
+                  {
+                    "label": "项目经理",
+                    "value": "李卫国"
+                  },
+                  {
+                    "label": "年合同额",
+                    "value": "1,920.00",
+                    "unit": "万元"
+                  }
+                ]
+              },
+              {
+                "label": "经营数据",
+                "unit": "万元",
+                "items": [
+                  {
+                    "label": "营收",
+                    "value": "160.00",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "毛利率",
+                    "value": "20.00",
+                    "unit": "%",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "逾期应收",
+                    "value": "32.00"
+                  },
+                  {
+                    "label": "回款率",
+                    "value": "15.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "成本指标",
+                "items": [
+                  {
+                    "label": "人工成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "人工占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "运营指标",
+                "items": [
+                  {
+                    "label": "作业人员",
+                    "value": 44
+                  },
+                  {
+                    "label": "车辆",
+                    "value": 19,
+                    "unit": "台"
+                  },
+                  {
+                    "label": "其中无人车辆",
+                    "value": 8,
+                    "unit": "台"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "provinceName": "内蒙古",
+      "summary": {
+        "operationVehicles": 32,
+        "operationRevenue": 270
+      },
+      "projects": [
+        {
+          "projectName": "呼和浩特城乡环卫项目",
+          "cityName": "呼和浩特",
+          "sortOrder": 1,
+          "coord": [
+            111.785972,
+            40.849642
+          ],
+          "revenueItems": [
+            {
+              "key": "作业车辆",
+              "value": 32,
+              "unit": "辆"
+            },
+            {
+              "key": "环卫运营收入",
+              "value": 270
+            }
+          ],
+          "detailData": {
+            "projectName": "呼和浩特城乡环卫项目",
+            "sections": [
+              {
+                "label": "基本信息",
+                "items": [
+                  {
+                    "label": "项目经理",
+                    "value": "王建华"
+                  },
+                  {
+                    "label": "年合同额",
+                    "value": "3,240.00",
+                    "unit": "万元"
+                  }
+                ]
+              },
+              {
+                "label": "经营数据",
+                "unit": "万元",
+                "items": [
+                  {
+                    "label": "营收",
+                    "value": "270.00",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "毛利率",
+                    "value": "20.00",
+                    "unit": "%",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "逾期应收",
+                    "value": "54.00"
+                  },
+                  {
+                    "label": "回款率",
+                    "value": "15.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "成本指标",
+                "items": [
+                  {
+                    "label": "人工成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "人工占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "运营指标",
+                "items": [
+                  {
+                    "label": "作业人员",
+                    "value": 70
+                  },
+                  {
+                    "label": "车辆",
+                    "value": 32,
+                    "unit": "台"
+                  },
+                  {
+                    "label": "其中无人车辆",
+                    "value": 13,
+                    "unit": "台"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "provinceName": "广东省",
+      "summary": {
+        "operationVehicles": 23,
+        "operationRevenue": 190
+      },
+      "projects": [
+        {
+          "projectName": "广州城市环卫运营项目",
+          "cityName": "广州",
+          "sortOrder": 1,
+          "coord": [
+            113.239359,
+            23.185545
+          ],
+          "revenueItems": [
+            {
+              "key": "作业车辆",
+              "value": 16,
+              "unit": "辆"
+            },
+            {
+              "key": "环卫运营收入",
+              "value": 130
+            }
+          ],
+          "detailData": {
+            "projectName": "广州城市环卫运营项目",
+            "sections": [
+              {
+                "label": "基本信息",
+                "items": [
+                  {
+                    "label": "项目经理",
+                    "value": "张志强"
+                  },
+                  {
+                    "label": "年合同额",
+                    "value": "1,560.00",
+                    "unit": "万元"
+                  }
+                ]
+              },
+              {
+                "label": "经营数据",
+                "unit": "万元",
+                "items": [
+                  {
+                    "label": "营收",
+                    "value": "130.00",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "毛利率",
+                    "value": "20.00",
+                    "unit": "%",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "逾期应收",
+                    "value": "26.00"
+                  },
+                  {
+                    "label": "回款率",
+                    "value": "15.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "成本指标",
+                "items": [
+                  {
+                    "label": "人工成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "人工占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "运营指标",
+                "items": [
+                  {
+                    "label": "作业人员",
+                    "value": 38
+                  },
+                  {
+                    "label": "车辆",
+                    "value": 16,
+                    "unit": "台"
+                  },
+                  {
+                    "label": "其中无人车辆",
+                    "value": 6,
+                    "unit": "台"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "projectName": "深圳环卫一体化项目",
+          "cityName": "深圳",
+          "sortOrder": 2,
+          "coord": [
+            114.066112,
+            22.548515
+          ],
+          "revenueItems": [
+            {
+              "key": "作业车辆",
+              "value": 7,
+              "unit": "辆"
+            },
+            {
+              "key": "环卫运营收入",
+              "value": 60
+            }
+          ],
+          "detailData": {
+            "projectName": "深圳环卫一体化项目",
+            "sections": [
+              {
+                "label": "基本信息",
+                "items": [
+                  {
+                    "label": "项目经理",
+                    "value": "刘明辉"
+                  },
+                  {
+                    "label": "年合同额",
+                    "value": "720.00",
+                    "unit": "万元"
+                  }
+                ]
+              },
+              {
+                "label": "经营数据",
+                "unit": "万元",
+                "items": [
+                  {
+                    "label": "营收",
+                    "value": "60.00",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "毛利率",
+                    "value": "20.00",
+                    "unit": "%",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "逾期应收",
+                    "value": "12.00"
+                  },
+                  {
+                    "label": "回款率",
+                    "value": "15.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "成本指标",
+                "items": [
+                  {
+                    "label": "人工成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "人工占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "运营指标",
+                "items": [
+                  {
+                    "label": "作业人员",
+                    "value": 20
+                  },
+                  {
+                    "label": "车辆",
+                    "value": 7,
+                    "unit": "台"
+                  },
+                  {
+                    "label": "其中无人车辆",
+                    "value": 3,
+                    "unit": "台"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "provinceName": "陕西省",
+      "summary": {
+        "operationVehicles": 24,
+        "operationRevenue": 200
+      },
+      "projects": [
+        {
+          "projectName": "西安城乡环卫一体化项目",
+          "cityName": "西安",
+          "sortOrder": 1,
+          "coord": [
+            108.953098,
+            34.2778
+          ],
+          "revenueItems": [
+            {
+              "key": "作业车辆",
+              "value": 24,
+              "unit": "辆"
+            },
+            {
+              "key": "环卫运营收入",
+              "value": 200
+            }
+          ],
+          "detailData": {
+            "projectName": "西安城乡环卫一体化项目",
+            "sections": [
+              {
+                "label": "基本信息",
+                "items": [
+                  {
+                    "label": "项目经理",
+                    "value": "陈永康"
+                  },
+                  {
+                    "label": "年合同额",
+                    "value": "2,400.00",
+                    "unit": "万元"
+                  }
+                ]
+              },
+              {
+                "label": "经营数据",
+                "unit": "万元",
+                "items": [
+                  {
+                    "label": "营收",
+                    "value": "200.00",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "毛利率",
+                    "value": "20.00",
+                    "unit": "%",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "逾期应收",
+                    "value": "40.00"
+                  },
+                  {
+                    "label": "回款率",
+                    "value": "15.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "成本指标",
+                "items": [
+                  {
+                    "label": "人工成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "人工占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "运营指标",
+                "items": [
+                  {
+                    "label": "作业人员",
+                    "value": 54
+                  },
+                  {
+                    "label": "车辆",
+                    "value": 24,
+                    "unit": "台"
+                  },
+                  {
+                    "label": "其中无人车辆",
+                    "value": 10,
+                    "unit": "台"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "provinceName": "四川省",
+      "summary": {
+        "operationVehicles": 10,
+        "operationRevenue": 85
+      },
+      "projects": [
+        {
+          "projectName": "成都道路清扫保洁项目",
+          "cityName": "成都",
+          "sortOrder": 1,
+          "coord": [
+            104.067923,
+            30.679943
+          ],
+          "revenueItems": [
+            {
+              "key": "作业车辆",
+              "value": 10,
+              "unit": "辆"
+            },
+            {
+              "key": "环卫运营收入",
+              "value": 85
+            }
+          ],
+          "detailData": {
+            "projectName": "成都道路清扫保洁项目",
+            "sections": [
+              {
+                "label": "基本信息",
+                "items": [
+                  {
+                    "label": "项目经理",
+                    "value": "赵国庆"
+                  },
+                  {
+                    "label": "年合同额",
+                    "value": "1,020.00",
+                    "unit": "万元"
+                  }
+                ]
+              },
+              {
+                "label": "经营数据",
+                "unit": "万元",
+                "items": [
+                  {
+                    "label": "营收",
+                    "value": "85.00",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "毛利率",
+                    "value": "20.00",
+                    "unit": "%",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "逾期应收",
+                    "value": "17.00"
+                  },
+                  {
+                    "label": "回款率",
+                    "value": "15.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "成本指标",
+                "items": [
+                  {
+                    "label": "人工成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "人工占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "运营指标",
+                "items": [
+                  {
+                    "label": "作业人员",
+                    "value": 26
+                  },
+                  {
+                    "label": "车辆",
+                    "value": 10,
+                    "unit": "台"
+                  },
+                  {
+                    "label": "其中无人车辆",
+                    "value": 4,
+                    "unit": "台"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "provinceName": "吉林省",
+      "summary": {
+        "operationVehicles": 16,
+        "operationRevenue": 130
+      },
+      "projects": [
+        {
+          "projectName": "长春环卫一体化运营项目",
+          "cityName": "长春",
+          "sortOrder": 1,
+          "coord": [
+            125.326383,
+            43.797768
+          ],
+          "revenueItems": [
+            {
+              "key": "作业车辆",
+              "value": 16,
+              "unit": "辆"
+            },
+            {
+              "key": "环卫运营收入",
+              "value": 130
+            }
+          ],
+          "detailData": {
+            "projectName": "长春环卫一体化运营项目",
+            "sections": [
+              {
+                "label": "基本信息",
+                "items": [
+                  {
+                    "label": "项目经理",
+                    "value": "李卫国"
+                  },
+                  {
+                    "label": "年合同额",
+                    "value": "1,560.00",
+                    "unit": "万元"
+                  }
+                ]
+              },
+              {
+                "label": "经营数据",
+                "unit": "万元",
+                "items": [
+                  {
+                    "label": "营收",
+                    "value": "130.00",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "毛利率",
+                    "value": "20.00",
+                    "unit": "%",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "逾期应收",
+                    "value": "26.00"
+                  },
+                  {
+                    "label": "回款率",
+                    "value": "15.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "成本指标",
+                "items": [
+                  {
+                    "label": "人工成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "人工占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "运营指标",
+                "items": [
+                  {
+                    "label": "作业人员",
+                    "value": 38
+                  },
+                  {
+                    "label": "车辆",
+                    "value": 16,
+                    "unit": "台"
+                  },
+                  {
+                    "label": "其中无人车辆",
+                    "value": 6,
+                    "unit": "台"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "provinceName": "黑龙江省",
+      "summary": {
+        "operationVehicles": 12,
+        "operationRevenue": 100
+      },
+      "projects": [
+        {
+          "projectName": "哈尔滨城市环卫项目",
+          "cityName": "哈尔滨",
+          "sortOrder": 1,
+          "coord": [
+            126.522207,
+            45.801617
+          ],
+          "revenueItems": [
+            {
+              "key": "作业车辆",
+              "value": 12,
+              "unit": "辆"
+            },
+            {
+              "key": "环卫运营收入",
+              "value": 100
+            }
+          ],
+          "detailData": {
+            "projectName": "哈尔滨城市环卫项目",
+            "sections": [
+              {
+                "label": "基本信息",
+                "items": [
+                  {
+                    "label": "项目经理",
+                    "value": "王建华"
+                  },
+                  {
+                    "label": "年合同额",
+                    "value": "1,200.00",
+                    "unit": "万元"
+                  }
+                ]
+              },
+              {
+                "label": "经营数据",
+                "unit": "万元",
+                "items": [
+                  {
+                    "label": "营收",
+                    "value": "100.00",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "毛利率",
+                    "value": "20.00",
+                    "unit": "%",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "逾期应收",
+                    "value": "20.00"
+                  },
+                  {
+                    "label": "回款率",
+                    "value": "15.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "成本指标",
+                "items": [
+                  {
+                    "label": "人工成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "人工占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "运营指标",
+                "items": [
+                  {
+                    "label": "作业人员",
+                    "value": 30
+                  },
+                  {
+                    "label": "车辆",
+                    "value": 12,
+                    "unit": "台"
+                  },
+                  {
+                    "label": "其中无人车辆",
+                    "value": 5,
+                    "unit": "台"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "provinceName": "贵州省",
+      "summary": {
+        "operationVehicles": 10,
+        "operationRevenue": 80
+      },
+      "projects": [
+        {
+          "projectName": "贵阳环卫一体化服务项目",
+          "cityName": "贵阳",
+          "sortOrder": 1,
+          "coord": [
+            106.616332,
+            26.707352
+          ],
+          "revenueItems": [
+            {
+              "key": "作业车辆",
+              "value": 10,
+              "unit": "辆"
+            },
+            {
+              "key": "环卫运营收入",
+              "value": 80
+            }
+          ],
+          "detailData": {
+            "projectName": "贵阳环卫一体化服务项目",
+            "sections": [
+              {
+                "label": "基本信息",
+                "items": [
+                  {
+                    "label": "项目经理",
+                    "value": "张志强"
+                  },
+                  {
+                    "label": "年合同额",
+                    "value": "960.00",
+                    "unit": "万元"
+                  }
+                ]
+              },
+              {
+                "label": "经营数据",
+                "unit": "万元",
+                "items": [
+                  {
+                    "label": "营收",
+                    "value": "80.00",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "毛利率",
+                    "value": "20.00",
+                    "unit": "%",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "逾期应收",
+                    "value": "16.00"
+                  },
+                  {
+                    "label": "回款率",
+                    "value": "15.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "成本指标",
+                "items": [
+                  {
+                    "label": "人工成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "人工占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "运营指标",
+                "items": [
+                  {
+                    "label": "作业人员",
+                    "value": 26
+                  },
+                  {
+                    "label": "车辆",
+                    "value": 10,
+                    "unit": "台"
+                  },
+                  {
+                    "label": "其中无人车辆",
+                    "value": 4,
+                    "unit": "台"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "provinceName": "云南省",
+      "summary": {
+        "operationVehicles": 7,
+        "operationRevenue": 60
+      },
+      "projects": [
+        {
+          "projectName": "昆明城市环卫运营项目",
+          "cityName": "昆明",
+          "sortOrder": 1,
+          "coord": [
+            102.881681,
+            24.866897
+          ],
+          "revenueItems": [
+            {
+              "key": "作业车辆",
+              "value": 7,
+              "unit": "辆"
+            },
+            {
+              "key": "环卫运营收入",
+              "value": 60
+            }
+          ],
+          "detailData": {
+            "projectName": "昆明城市环卫运营项目",
+            "sections": [
+              {
+                "label": "基本信息",
+                "items": [
+                  {
+                    "label": "项目经理",
+                    "value": "刘明辉"
+                  },
+                  {
+                    "label": "年合同额",
+                    "value": "720.00",
+                    "unit": "万元"
+                  }
+                ]
+              },
+              {
+                "label": "经营数据",
+                "unit": "万元",
+                "items": [
+                  {
+                    "label": "营收",
+                    "value": "60.00",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "毛利率",
+                    "value": "20.00",
+                    "unit": "%",
+                    "delta": "+3%"
+                  },
+                  {
+                    "label": "逾期应收",
+                    "value": "12.00"
+                  },
+                  {
+                    "label": "回款率",
+                    "value": "15.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "成本指标",
+                "items": [
+                  {
+                    "label": "人工成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "人工占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械成本占比",
+                    "value": "78.08",
+                    "unit": "%"
+                  },
+                  {
+                    "label": "机械占比目标",
+                    "value": "80.00",
+                    "unit": "%"
+                  }
+                ]
+              },
+              {
+                "label": "运营指标",
+                "items": [
+                  {
+                    "label": "作业人员",
+                    "value": 20
+                  },
+                  {
+                    "label": "车辆",
+                    "value": 7,
+                    "unit": "台"
+                  },
+                  {
+                    "label": "其中无人车辆",
+                    "value": 3,
+                    "unit": "台"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

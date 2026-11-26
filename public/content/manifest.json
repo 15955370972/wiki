@@ -1,0 +1,1153 @@
+{
+  "generatedAt": "2026-11-26T03:25:05.712Z",
+  "categories": [
+    "组件封装",
+    "Hooks 工具",
+    "方案实践"
+  ],
+  "entries": [
+    {
+      "id": "地图组件",
+      "title": "地图组件",
+      "category": "组件封装",
+      "docs": [
+        {
+          "path": "MapChart下钻地图组件定制指南.md",
+          "name": "MapChart下钻地图组件定制指南.md",
+          "size": 66296
+        }
+      ],
+      "code": [
+        {
+          "path": "map/config/mapConfig.ts",
+          "name": "mapConfig.ts",
+          "size": 3536,
+          "lang": "typescript",
+          "previewable": true
+        },
+        {
+          "path": "map/index.vue",
+          "name": "index.vue",
+          "size": 4970,
+          "lang": "vue",
+          "previewable": true
+        },
+        {
+          "path": "map/MapChart.vue",
+          "name": "MapChart.vue",
+          "size": 79562,
+          "lang": "vue",
+          "previewable": true
+        },
+        {
+          "path": "map/utils/cityCoordinates.ts",
+          "name": "cityCoordinates.ts",
+          "size": 9577,
+          "lang": "typescript",
+          "previewable": true
+        },
+        {
+          "path": "map/utils/formatDisplayNumber.ts",
+          "name": "formatDisplayNumber.ts",
+          "size": 849,
+          "lang": "typescript",
+          "previewable": true
+        },
+        {
+          "path": "map/utils/geoAssets.ts",
+          "name": "geoAssets.ts",
+          "size": 2477,
+          "lang": "typescript",
+          "previewable": true
+        },
+        {
+          "path": "map/utils/geoNames.ts",
+          "name": "geoNames.ts",
+          "size": 14895,
+          "lang": "typescript",
+          "previewable": true
+        },
+        {
+          "path": "map/utils/mapNames.ts",
+          "name": "mapNames.ts",
+          "size": 987,
+          "lang": "typescript",
+          "previewable": true
+        },
+        {
+          "path": "map/utils/provinceAdcode.ts",
+          "name": "provinceAdcode.ts",
+          "size": 1056,
+          "lang": "typescript",
+          "previewable": true
+        },
+        {
+          "path": "map/utils/worldMapCountryNames.ts",
+          "name": "worldMapCountryNames.ts",
+          "size": 7066,
+          "lang": "typescript",
+          "previewable": true
+        },
+        {
+          "path": "map/utils/worldMapGeo.ts",
+          "name": "worldMapGeo.ts",
+          "size": 6852,
+          "lang": "typescript",
+          "previewable": true
+        }
+      ],
+      "assets": [
+        {
+          "path": "assets/china.json",
+          "name": "china.json",
+          "size": 60439
+        },
+        {
+          "path": "assets/cities.json",
+          "name": "cities.json",
+          "size": 3869209
+        },
+        {
+          "path": "assets/citiesgeojson/110000.json",
+          "name": "110000.json",
+          "size": 31710
+        },
+        {
+          "path": "assets/citiesgeojson/120000.json",
+          "name": "120000.json",
+          "size": 28034
+        },
+        {
+          "path": "assets/citiesgeojson/130000.json",
+          "name": "130000.json",
+          "size": 73453
+        },
+        {
+          "path": "assets/citiesgeojson/140000.json",
+          "name": "140000.json",
+          "size": 60905
+        },
+        {
+          "path": "assets/citiesgeojson/150000.json",
+          "name": "150000.json",
+          "size": 79281
+        },
+        {
+          "path": "assets/citiesgeojson/210000.json",
+          "name": "210000.json",
+          "size": 161468
+        },
+        {
+          "path": "assets/citiesgeojson/220000.json",
+          "name": "220000.json",
+          "size": 147298
+        },
+        {
+          "path": "assets/citiesgeojson/230000.json",
+          "name": "230000.json",
+          "size": 146796
+        },
+        {
+          "path": "assets/citiesgeojson/320000.json",
+          "name": "320000.json",
+          "size": 97544
+        },
+        {
+          "path": "assets/citiesgeojson/330000.json",
+          "name": "330000.json",
+          "size": 120400
+        },
+        {
+          "path": "assets/citiesgeojson/340000.json",
+          "name": "340000.json",
+          "size": 127323
+        },
+        {
+          "path": "assets/citiesgeojson/350000.json",
+          "name": "350000.json",
+          "size": 114242
+        },
+        {
+          "path": "assets/citiesgeojson/360000.json",
+          "name": "360000.json",
+          "size": 121693
+        },
+        {
+          "path": "assets/citiesgeojson/370000.json",
+          "name": "370000.json",
+          "size": 167871
+        },
+        {
+          "path": "assets/citiesgeojson/410000.json",
+          "name": "410000.json",
+          "size": 153773
+        },
+        {
+          "path": "assets/citiesgeojson/420000.json",
+          "name": "420000.json",
+          "size": 155791
+        },
+        {
+          "path": "assets/citiesgeojson/430000.json",
+          "name": "430000.json",
+          "size": 175675
+        },
+        {
+          "path": "assets/citiesgeojson/440000.json",
+          "name": "440000.json",
+          "size": 192960
+        },
+        {
+          "path": "assets/citiesgeojson/450000.json",
+          "name": "450000.json",
+          "size": 167979
+        },
+        {
+          "path": "assets/citiesgeojson/460000.json",
+          "name": "460000.json",
+          "size": 34122
+        },
+        {
+          "path": "assets/citiesgeojson/500000.json",
+          "name": "500000.json",
+          "size": 44183
+        },
+        {
+          "path": "assets/citiesgeojson/510000.json",
+          "name": "510000.json",
+          "size": 164813
+        },
+        {
+          "path": "assets/citiesgeojson/520000.json",
+          "name": "520000.json",
+          "size": 130184
+        },
+        {
+          "path": "assets/citiesgeojson/530000.json",
+          "name": "530000.json",
+          "size": 122595
+        },
+        {
+          "path": "assets/citiesgeojson/540000.json",
+          "name": "540000.json",
+          "size": 134515
+        },
+        {
+          "path": "assets/citiesgeojson/610000.json",
+          "name": "610000.json",
+          "size": 71734
+        },
+        {
+          "path": "assets/citiesgeojson/620000.json",
+          "name": "620000.json",
+          "size": 105621
+        },
+        {
+          "path": "assets/citiesgeojson/630000.json",
+          "name": "630000.json",
+          "size": 97940
+        },
+        {
+          "path": "assets/citiesgeojson/640000.json",
+          "name": "640000.json",
+          "size": 49532
+        },
+        {
+          "path": "assets/citiesgeojson/650000.json",
+          "name": "650000.json",
+          "size": 119225
+        },
+        {
+          "path": "assets/citiesgeojson/710000.json",
+          "name": "710000.json",
+          "size": 4216
+        },
+        {
+          "path": "assets/world.json",
+          "name": "world.json",
+          "size": 2710411
+        },
+        {
+          "path": "环卫运营地图打点mock数据.json",
+          "name": "环卫运营地图打点mock数据.json",
+          "size": 90399
+        }
+      ],
+      "updatedAt": "2026-11-25"
+    },
+    {
+      "id": "计算表格滚动高度",
+      "title": "计算表格滚动高度",
+      "category": "Hooks 工具",
+      "docs": [
+        {
+          "path": "表格滚动高度hook（useTableScrollY）使用文档.md",
+          "name": "表格滚动高度hook（useTableScrollY）使用文档.md",
+          "size": 68220
+        }
+      ],
+      "code": [
+        {
+          "path": "useTableScrollY.ts",
+          "name": "useTableScrollY.ts",
+          "size": 13442,
+          "lang": "typescript",
+          "previewable": true
+        }
+      ],
+      "assets": [],
+      "updatedAt": "2026-11-19"
+    },
+    {
+      "id": "省略号文本",
+      "title": "省略号文本",
+      "category": "Hooks 工具",
+      "docs": [
+        {
+          "path": "单元格省略号tooltip hook（useCellTooltip）使用文档.md",
+          "name": "单元格省略号tooltip hook（useCellTooltip）使用文档.md",
+          "size": 7114
+        }
+      ],
+      "code": [
+        {
+          "path": "useCellTooltip.ts",
+          "name": "useCellTooltip.ts",
+          "size": 6827,
+          "lang": "typescript",
+          "previewable": true
+        }
+      ],
+      "assets": [],
+      "updatedAt": "2026-11-12"
+    },
+    {
+      "id": "带延伸线的饼图",
+      "title": "带延伸线的饼图",
+      "category": "组件封装",
+      "docs": [],
+      "code": [
+        {
+          "path": "SolidPieCard.vue",
+          "name": "SolidPieCard.vue",
+          "size": 19896,
+          "lang": "vue",
+          "previewable": true
+        }
+      ],
+      "assets": [],
+      "updatedAt": "2026-11-10"
+    },
+    {
+      "id": "滚动指定位置",
+      "title": "滚动指定位置",
+      "category": "Hooks 工具",
+      "docs": [
+        {
+          "path": "锚点平滑滚动工具（fixedScroll）使用文档.md",
+          "name": "锚点平滑滚动工具（fixedScroll）使用文档.md",
+          "size": 10886
+        }
+      ],
+      "code": [
+        {
+          "path": "fixedScroll.ts",
+          "name": "fixedScroll.ts",
+          "size": 2520,
+          "lang": "typescript",
+          "previewable": true
+        }
+      ],
+      "assets": [],
+      "updatedAt": "2026-11-10"
+    },
+    {
+      "id": "表格高度",
+      "title": "表格高度",
+      "category": "方案实践",
+      "docs": [
+        {
+          "path": "提车明细表格高度自适应修复记录.md",
+          "name": "提车明细表格高度自适应修复记录.md",
+          "size": 8743
+        }
+      ],
+      "code": [],
+      "assets": [],
+      "updatedAt": "2026-11-05"
+    },
+    {
+      "id": "数据参谋",
+      "title": "数据参谋",
+      "category": "方案实践",
+      "docs": [
+        {
+          "path": "AI-center-chart思考过程渐进Markdown渲染重构.md",
+          "name": "AI-center-chart思考过程渐进Markdown渲染重构.md",
+          "size": 10862
+        },
+        {
+          "path": "AI-center-chart长对话卡顿性能优化.md",
+          "name": "AI-center-chart长对话卡顿性能优化.md",
+          "size": 17101
+        }
+      ],
+      "code": [
+        {
+          "path": "Ai/components/AnsCard.vue",
+          "name": "AnsCard.vue",
+          "size": 2538,
+          "lang": "vue",
+          "previewable": true
+        },
+        {
+          "path": "Ai/components/BottomChart.vue",
+          "name": "BottomChart.vue",
+          "size": 11068,
+          "lang": "vue",
+          "previewable": true
+        },
+        {
+          "path": "Ai/components/CenterChart.vue",
+          "name": "CenterChart.vue",
+          "size": 22290,
+          "lang": "vue",
+          "previewable": true
+        },
+        {
+          "path": "Ai/components/FailContent.vue",
+          "name": "FailContent.vue",
+          "size": 3112,
+          "lang": "vue",
+          "previewable": true
+        },
+        {
+          "path": "Ai/components/HeaderChart.vue",
+          "name": "HeaderChart.vue",
+          "size": 2033,
+          "lang": "vue",
+          "previewable": true
+        },
+        {
+          "path": "Ai/components/HistoryCard.vue",
+          "name": "HistoryCard.vue",
+          "size": 5389,
+          "lang": "vue",
+          "previewable": true
+        },
+        {
+          "path": "Ai/components/InsightBarChart.vue",
+          "name": "InsightBarChart.vue",
+          "size": 3867,
+          "lang": "vue",
+          "previewable": true
+        },
+        {
+          "path": "Ai/components/InsightCard.vue",
+          "name": "InsightCard.vue",
+          "size": 9969,
+          "lang": "vue",
+          "previewable": true
+        },
+        {
+          "path": "Ai/components/InsightLineChart.vue",
+          "name": "InsightLineChart.vue",
+          "size": 3869,
+          "lang": "vue",
+          "previewable": true
+        },
+        {
+          "path": "Ai/components/InsightPieChart.vue",
+          "name": "InsightPieChart.vue",
+          "size": 18353,
+          "lang": "vue",
+          "previewable": true
+        },
+        {
+          "path": "Ai/components/MessageCard.vue",
+          "name": "MessageCard.vue",
+          "size": 16387,
+          "lang": "vue",
+          "previewable": true
+        },
+        {
+          "path": "Ai/components/TipsComp.vue",
+          "name": "TipsComp.vue",
+          "size": 6825,
+          "lang": "vue",
+          "previewable": true
+        },
+        {
+          "path": "Ai/components/useChartScroll.ts",
+          "name": "useChartScroll.ts",
+          "size": 3766,
+          "lang": "typescript",
+          "previewable": true
+        },
+        {
+          "path": "Ai/index.vue",
+          "name": "index.vue",
+          "size": 18380,
+          "lang": "vue",
+          "previewable": true
+        },
+        {
+          "path": "Ai/utils/ansXmlParser.ts",
+          "name": "ansXmlParser.ts",
+          "size": 7667,
+          "lang": "typescript",
+          "previewable": true
+        },
+        {
+          "path": "Ai/utils/barLineChart.ts",
+          "name": "barLineChart.ts",
+          "size": 4877,
+          "lang": "typescript",
+          "previewable": true
+        },
+        {
+          "path": "Ai/utils/chartPixelRatio.test.ts",
+          "name": "chartPixelRatio.test.ts",
+          "size": 1646,
+          "lang": "typescript",
+          "previewable": true
+        },
+        {
+          "path": "Ai/utils/chartPixelRatio.ts",
+          "name": "chartPixelRatio.ts",
+          "size": 1657,
+          "lang": "typescript",
+          "previewable": true
+        },
+        {
+          "path": "Ai/utils/chartPointerZoom.ts",
+          "name": "chartPointerZoom.ts",
+          "size": 2092,
+          "lang": "typescript",
+          "previewable": true
+        },
+        {
+          "path": "Ai/utils/chatRender.ts",
+          "name": "chatRender.ts",
+          "size": 3347,
+          "lang": "typescript",
+          "previewable": true
+        },
+        {
+          "path": "Ai/utils/httpClient.ts",
+          "name": "httpClient.ts",
+          "size": 5446,
+          "lang": "typescript",
+          "previewable": true
+        },
+        {
+          "path": "Ai/utils/useAiDrag.ts",
+          "name": "useAiDrag.ts",
+          "size": 12110,
+          "lang": "typescript",
+          "previewable": true
+        },
+        {
+          "path": "Ai/utils/useHttpClient.ts",
+          "name": "useHttpClient.ts",
+          "size": 1137,
+          "lang": "typescript",
+          "previewable": true
+        },
+        {
+          "path": "markdown-prefix-typing-demo.html",
+          "name": "markdown-prefix-typing-demo.html",
+          "size": 16019,
+          "lang": "html",
+          "previewable": true
+        }
+      ],
+      "assets": [
+        {
+          "path": "Ai/images/back.png",
+          "name": "back.png",
+          "size": 277
+        },
+        {
+          "path": "Ai/images/bg-bottom.png",
+          "name": "bg-bottom.png",
+          "size": 54561
+        },
+        {
+          "path": "Ai/images/bg-top.png",
+          "name": "bg-top.png",
+          "size": 9316
+        },
+        {
+          "path": "Ai/images/check-view.png",
+          "name": "check-view.png",
+          "size": 343
+        },
+        {
+          "path": "Ai/images/close.png",
+          "name": "close.png",
+          "size": 341
+        },
+        {
+          "path": "Ai/images/core/add.png",
+          "name": "add.png",
+          "size": 639
+        },
+        {
+          "path": "Ai/images/core/ai.png",
+          "name": "ai.png",
+          "size": 366102
+        },
+        {
+          "path": "Ai/images/core/ai.svg",
+          "name": "ai.svg",
+          "size": 488684
+        },
+        {
+          "path": "Ai/images/core/ask-text.png",
+          "name": "ask-text.png",
+          "size": 652
+        },
+        {
+          "path": "Ai/images/core/close.svg",
+          "name": "close.svg",
+          "size": 1011
+        },
+        {
+          "path": "Ai/images/core/collapse.svg",
+          "name": "collapse.svg",
+          "size": 663
+        },
+        {
+          "path": "Ai/images/core/continue.svg",
+          "name": "continue.svg",
+          "size": 1450
+        },
+        {
+          "path": "Ai/images/core/copy.png",
+          "name": "copy.png",
+          "size": 356
+        },
+        {
+          "path": "Ai/images/core/cost-current.svg",
+          "name": "cost-current.svg",
+          "size": 509
+        },
+        {
+          "path": "Ai/images/core/cost-default.svg",
+          "name": "cost-default.svg",
+          "size": 509
+        },
+        {
+          "path": "Ai/images/core/current-copy.svg",
+          "name": "current-copy.svg",
+          "size": 2156
+        },
+        {
+          "path": "Ai/images/core/current-send.svg",
+          "name": "current-send.svg",
+          "size": 616
+        },
+        {
+          "path": "Ai/images/core/current-share.svg",
+          "name": "current-share.svg",
+          "size": 1048
+        },
+        {
+          "path": "Ai/images/core/current-smart.svg",
+          "name": "current-smart.svg",
+          "size": 2052
+        },
+        {
+          "path": "Ai/images/core/default-copy.svg",
+          "name": "default-copy.svg",
+          "size": 2776
+        },
+        {
+          "path": "Ai/images/core/default-send.svg",
+          "name": "default-send.svg",
+          "size": 537
+        },
+        {
+          "path": "Ai/images/core/default-share.svg",
+          "name": "default-share.svg",
+          "size": 1048
+        },
+        {
+          "path": "Ai/images/core/default-smart.svg",
+          "name": "default-smart.svg",
+          "size": 2042
+        },
+        {
+          "path": "Ai/images/core/engineering-current.svg",
+          "name": "engineering-current.svg",
+          "size": 626
+        },
+        {
+          "path": "Ai/images/core/engineering-default.svg",
+          "name": "engineering-default.svg",
+          "size": 626
+        },
+        {
+          "path": "Ai/images/core/expand.svg",
+          "name": "expand.svg",
+          "size": 663
+        },
+        {
+          "path": "Ai/images/core/fail.png",
+          "name": "fail.png",
+          "size": 620
+        },
+        {
+          "path": "Ai/images/core/finance-current.svg",
+          "name": "finance-current.svg",
+          "size": 419
+        },
+        {
+          "path": "Ai/images/core/finance-default.svg",
+          "name": "finance-default.svg",
+          "size": 419
+        },
+        {
+          "path": "Ai/images/core/marketing-current.svg",
+          "name": "marketing-current.svg",
+          "size": 431
+        },
+        {
+          "path": "Ai/images/core/marketing-default.svg",
+          "name": "marketing-default.svg",
+          "size": 431
+        },
+        {
+          "path": "Ai/images/core/new-chat.svg",
+          "name": "new-chat.svg",
+          "size": 331
+        },
+        {
+          "path": "Ai/images/core/property-current.svg",
+          "name": "property-current.svg",
+          "size": 354
+        },
+        {
+          "path": "Ai/images/core/property-default.svg",
+          "name": "property-default.svg",
+          "size": 354
+        },
+        {
+          "path": "Ai/images/core/react.png",
+          "name": "react.png",
+          "size": 1279
+        },
+        {
+          "path": "Ai/images/core/refresh.png",
+          "name": "refresh.png",
+          "size": 1331
+        },
+        {
+          "path": "Ai/images/core/regenerate.svg",
+          "name": "regenerate.svg",
+          "size": 461
+        },
+        {
+          "path": "Ai/images/core/screenfullbg.png",
+          "name": "screenfullbg.png",
+          "size": 7475
+        },
+        {
+          "path": "Ai/images/core/send.png",
+          "name": "send.png",
+          "size": 714
+        },
+        {
+          "path": "Ai/images/core/share.png",
+          "name": "share.png",
+          "size": 446
+        },
+        {
+          "path": "Ai/images/core/speack.png",
+          "name": "speack.png",
+          "size": 1275
+        },
+        {
+          "path": "Ai/images/core/star.png",
+          "name": "star.png",
+          "size": 692
+        },
+        {
+          "path": "Ai/images/core/star.svg",
+          "name": "star.svg",
+          "size": 1227
+        },
+        {
+          "path": "Ai/images/core/success.png",
+          "name": "success.png",
+          "size": 602
+        },
+        {
+          "path": "Ai/images/core/zhaocai-curr.png",
+          "name": "zhaocai-curr.png",
+          "size": 1121
+        },
+        {
+          "path": "Ai/images/core/zhaocai-default.png",
+          "name": "zhaocai-default.png",
+          "size": 1082
+        },
+        {
+          "path": "Ai/images/dislike-cancel.svg",
+          "name": "dislike-cancel.svg",
+          "size": 660
+        },
+        {
+          "path": "Ai/images/dislike-ok.svg",
+          "name": "dislike-ok.svg",
+          "size": 572
+        },
+        {
+          "path": "Ai/images/history.png",
+          "name": "history.png",
+          "size": 903
+        },
+        {
+          "path": "Ai/images/icon-fixed.png",
+          "name": "icon-fixed.png",
+          "size": 97384
+        },
+        {
+          "path": "Ai/images/like-cancel.svg",
+          "name": "like-cancel.svg",
+          "size": 654
+        },
+        {
+          "path": "Ai/images/like-ok.svg",
+          "name": "like-ok.svg",
+          "size": 397
+        },
+        {
+          "path": "Ai/images/minisize.png",
+          "name": "minisize.png",
+          "size": 424
+        },
+        {
+          "path": "Ai/images/send-no-msg.png",
+          "name": "send-no-msg.png",
+          "size": 619
+        },
+        {
+          "path": "Ai/images/send-with-msg.png",
+          "name": "send-with-msg.png",
+          "size": 616
+        }
+      ],
+      "updatedAt": "2026-11-02"
+    },
+    {
+      "id": "相连面板",
+      "title": "相连面板",
+      "category": "组件封装",
+      "docs": [
+        {
+          "path": "营业收入卡片与图表高亮联动实现记录.md",
+          "name": "营业收入卡片与图表高亮联动实现记录.md",
+          "size": 9995
+        },
+        {
+          "path": "ConnectedPanel相连面板使用文档.md",
+          "name": "ConnectedPanel相连面板使用文档.md",
+          "size": 17951
+        }
+      ],
+      "code": [
+        {
+          "path": "ConnectedPanel.vue",
+          "name": "ConnectedPanel.vue",
+          "size": 4363,
+          "lang": "vue",
+          "previewable": true
+        }
+      ],
+      "assets": [],
+      "updatedAt": "2026-10-26"
+    },
+    {
+      "id": "计算悬浮框位置-固定定位",
+      "title": "计算悬浮框位置-固定定位",
+      "category": "Hooks 工具",
+      "docs": [
+        {
+          "path": "固定定位锚点悬浮框hook使用文档.md",
+          "name": "固定定位锚点悬浮框hook使用文档.md",
+          "size": 15461
+        }
+      ],
+      "code": [
+        {
+          "path": "useFixedAnchorPopover.ts",
+          "name": "useFixedAnchorPopover.ts",
+          "size": 8137,
+          "lang": "typescript",
+          "previewable": true
+        }
+      ],
+      "assets": [],
+      "updatedAt": "2026-10-13"
+    },
+    {
+      "id": "计算悬浮框位置-绝对定位",
+      "title": "计算悬浮框位置-绝对定位",
+      "category": "Hooks 工具",
+      "docs": [
+        {
+          "path": "悬浮框锚点定位hook使用文档.md",
+          "name": "悬浮框锚点定位hook使用文档.md",
+          "size": 13755
+        }
+      ],
+      "code": [
+        {
+          "path": "useAnchorPopover.ts",
+          "name": "useAnchorPopover.ts",
+          "size": 6273,
+          "lang": "typescript",
+          "previewable": true
+        }
+      ],
+      "assets": [],
+      "updatedAt": "2026-10-13"
+    },
+    {
+      "id": "计算悬浮框位置-固定定位（初版屏幕居中显示）",
+      "title": "计算悬浮框位置-固定定位（初版屏幕居中显示）",
+      "category": "Hooks 工具",
+      "docs": [
+        {
+          "path": "悬浮框视口内定位hook使用文档.md",
+          "name": "悬浮框视口内定位hook使用文档.md",
+          "size": 6737
+        }
+      ],
+      "code": [
+        {
+          "path": "useViewportPopover.ts",
+          "name": "useViewportPopover.ts",
+          "size": 2127,
+          "lang": "typescript",
+          "previewable": true
+        }
+      ],
+      "assets": [],
+      "updatedAt": "2026-10-12"
+    },
+    {
+      "id": "弹框",
+      "title": "弹框",
+      "category": "组件封装",
+      "docs": [],
+      "code": [
+        {
+          "path": "CockpitDialog.vue",
+          "name": "CockpitDialog.vue",
+          "size": 4270,
+          "lang": "vue",
+          "previewable": true
+        },
+        {
+          "path": "useCockpitScale.ts",
+          "name": "useCockpitScale.ts",
+          "size": 2678,
+          "lang": "typescript",
+          "previewable": true
+        }
+      ],
+      "assets": [],
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "弹框缩放",
+      "title": "弹框缩放",
+      "category": "Hooks 工具",
+      "docs": [
+        {
+          "path": "useCockpitScale实现分析.md",
+          "name": "useCockpitScale实现分析.md",
+          "size": 5746
+        }
+      ],
+      "code": [
+        {
+          "path": "useCockpitScale.ts",
+          "name": "useCockpitScale.ts",
+          "size": 3901,
+          "lang": "typescript",
+          "previewable": true
+        }
+      ],
+      "assets": [],
+      "updatedAt": "2026-09-07"
+    },
+    {
+      "id": "微前端预加载",
+      "title": "微前端预加载",
+      "category": "方案实践",
+      "docs": [
+        {
+          "path": "微应用预加载改造说明.md",
+          "name": "微应用预加载改造说明.md",
+          "size": 9854
+        },
+        {
+          "path": "智能科技微前端迁移修正说明.md",
+          "name": "智能科技微前端迁移修正说明.md",
+          "size": 23025
+        }
+      ],
+      "code": [
+        {
+          "path": "preload.ts",
+          "name": "preload.ts",
+          "size": 4445,
+          "lang": "typescript",
+          "previewable": true
+        }
+      ],
+      "assets": [],
+      "updatedAt": "2026-09-03"
+    },
+    {
+      "id": "可展开排序表格",
+      "title": "可展开排序表格",
+      "category": "组件封装",
+      "docs": [
+        {
+          "path": "可展开排序表格的使用文档.md",
+          "name": "可展开排序表格的使用文档.md",
+          "size": 18309
+        }
+      ],
+      "code": [
+        {
+          "path": "TreeTable.vue",
+          "name": "TreeTable.vue",
+          "size": 32603,
+          "lang": "vue",
+          "previewable": true
+        }
+      ],
+      "assets": [],
+      "updatedAt": "2026-06-26"
+    },
+    {
+      "id": "进度条",
+      "title": "进度条",
+      "category": "组件封装",
+      "docs": [],
+      "code": [
+        {
+          "path": "BarProgress.vue",
+          "name": "BarProgress.vue",
+          "size": 6804,
+          "lang": "vue",
+          "previewable": true
+        }
+      ],
+      "assets": [],
+      "updatedAt": "2026-06-26"
+    },
+    {
+      "id": "滚动条组件",
+      "title": "滚动条组件",
+      "category": "组件封装",
+      "docs": [
+        {
+          "path": "纵向与横向滚动条的使用文档.md",
+          "name": "纵向与横向滚动条的使用文档.md",
+          "size": 7172
+        }
+      ],
+      "code": [
+        {
+          "path": "ScrollWrapper.vue",
+          "name": "ScrollWrapper.vue",
+          "size": 7507,
+          "lang": "vue",
+          "previewable": true
+        }
+      ],
+      "assets": [],
+      "updatedAt": "2026-06-23"
+    }
+  ],
+  "books": [
+    {
+      "id": "Angular高级编程+第四版_14884668.pdf",
+      "title": "Angular高级编程+第四版_14884668",
+      "category": "未分类",
+      "path": "/books/Angular%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B+%E7%AC%AC%E5%9B%9B%E7%89%88_14884668.pdf",
+      "size": 217416865
+    },
+    {
+      "id": "React设计原理+(卡颂)+.pdf",
+      "title": "React设计原理+(卡颂)+",
+      "category": "未分类",
+      "path": "/books/React%E8%AE%BE%E8%AE%A1%E5%8E%9F%E7%90%86+(%E5%8D%A1%E9%A2%82)+.pdf",
+      "size": 12475004
+    }
+  ],
+  "projects": [
+    {
+      "id": "wiki-blog",
+      "title": "Wiki 个人笔记库",
+      "summary": "本站自己：React + Ant Design 搭建的笔记博客，支持亮暗模式、Markdown 渲染、代码片段浏览与 PDF 阅读",
+      "stack": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Ant Design"
+      ],
+      "demoUrl": null,
+      "repoUrl": null,
+      "embedable": false,
+      "screenshots": [],
+      "intro": "projects/wiki-blog/intro.md",
+      "files": [
+        {
+          "path": "intro.md",
+          "name": "intro.md",
+          "size": 929,
+          "lang": "markdown"
+        },
+        {
+          "path": "package.json",
+          "name": "package.json",
+          "size": 890,
+          "lang": "json"
+        },
+        {
+          "path": "src/api/content.ts",
+          "name": "content.ts",
+          "size": 1850,
+          "lang": "typescript"
+        },
+        {
+          "path": "src/layouts/BasicLayout.tsx",
+          "name": "BasicLayout.tsx",
+          "size": 2641,
+          "lang": "tsx"
+        },
+        {
+          "path": "src/main.tsx",
+          "name": "main.tsx",
+          "size": 424,
+          "lang": "tsx"
+        },
+        {
+          "path": "src/theme/ThemeProvider.tsx",
+          "name": "ThemeProvider.tsx",
+          "size": 2675,
+          "lang": "tsx"
+        }
+      ],
+      "updatedAt": "2026-11-26"
+    }
+  ]
+}

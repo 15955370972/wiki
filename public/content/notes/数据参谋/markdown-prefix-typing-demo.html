@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<title>渐进 Markdown 渲染原理 Demo：旧 tokenQueue vs 新 markdown 前缀全量重渲染</title>
+<script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Segoe UI", "Microsoft YaHei", sans-serif; background: #f5f6fa; color: #2d3436; padding: 20px; }
+  h1 { font-size: 20px; margin-bottom: 6px; }
+  .sub { color: #636e72; font-size: 13px; margin-bottom: 14px; line-height: 1.6; }
+  .toolbar { display: flex; gap: 10px; align-items: center; margin-bottom: 14px; flex-wrap: wrap; }
+  button { border: 0; background: #0984e3; color: #fff; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 13px; }
+  button:hover { opacity: .85; }
+  .toolbar input[type=range] { width: 160px; }
+  .toolbar label { font-size: 12px; color: #636e72; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 1000px) { .cols { grid-template-columns: 1fr; } }
+  .panel { background: #fff; border-radius: 10px; overflow: hidden; border: 1px solid #dfe6e9; display: flex; flex-direction: column; min-height: 480px; }
+  .panel-head { padding: 10px 14px; font-size: 14px; font-weight: 600; color: #fff; }
+  .old .panel-head { background: #d63031; }
+  .new .panel-head { background: #00b894; }
+  .panel-desc { padding: 8px 14px; font-size: 12px; color: #636e72; border-bottom: 1px solid #f1f2f6; line-height: 1.6; }
+  .stream-body { padding: 14px; flex: 1; overflow: auto; max-height: 420px; }
+  .stream-body h1, .stream-body h2, .stream-body h3 { margin: 8px 0 6px; }
+  .stream-body table { border-collapse: collapse; margin: 8px 0; }
+  .stream-body td, .stream-body th { border: 1px solid #b2bec3; padding: 3px 8px; font-size: 13px; }
+  .stream-body li { margin-left: 18px; }
+  .statusbar { display: flex; gap: 16px; padding: 8px 14px; font-size: 11px; background: #f8f9fa; border-top: 1px solid #ecf0f1; font-family: Consolas, monospace; color: #636e72; }
+  .warn { color: #d63031; font-weight: 600; }
+  .code { background: #2d3436; color: #dfe6e9; font-family: Consolas, monospace; font-size: 12px; padding: 12px 14px; border-radius: 8px; margin-top: 16px; white-space: pre; overflow: auto; line-height: 1.5; }
+  .legend { font-size: 12px; color: #636e72; margin-top: 8px; line-height: 1.7; }
+</style>
+</head>
+<body>
+  <h1>渐进 Markdown 渲染重构 —— 双管线对比 Demo</h1>
+  <div class="sub">
+    模拟同一条流式消息在两条打字机管线下的表现。<b style="color:#d63031">左（旧）</b>：对每个 delta 片段单独 makeHtml 后进 token 队列 —— 语法上下文丢失，<code>**</code>、表格、标题在流结束前一直是原文碎片；<br/>
+    <b style="color:#00b894">右（新）</b>：打字指针指向<b>原始 markdown</b>，每帧对 <code>message.slice(0, ptr)</code> 全量转换 —— 语法闭口/分隔行到达后 1~2 帧内自动修正。
+  </div>
+
+  <div class="toolbar">
+    <button id="btnStart">▶ 开始流式输出</button>
+    <button id="btnPause">⏸ 暂停</button>
+    <button id="btnStep">⏭ 单步（一条 delta）</button>
+    <button id="btnReset">↺ 重置</button>
+    <label>流式速度（字/帧） <input id="speed" type="range" min="1" max="30" value="6" /> <span id="speedVal">6</span></label>
+  </div>
+
+  <div class="cols">
+    <section class="panel old">
+      <div class="panel-head">旧管线：tokenQueue（delta 独立转换）</div>
+      <div class="panel-desc">pushTokens(makeHtml(delta)) → 队列 → 逐 token 拼接 typedHtml。<b class="warn">谜底：展示的是 HTML 碎片，语法上下文已丢。</b></div>
+      <div class="stream-body" id="oldBody"></div>
+      <div class="statusbar"><span>showdown输入(最后一条delta): <b id="oldInput" style="color:#d63031">-</b></span><span id="oldStat">delta数: 0</span><span>队列余量: <b id="oldQueue">0</b></span><span id="oldFix">语法正确率: -</span></div>
+    </section>
+
+    <section class="panel new">
+      <div class="panel-head">新管线：markdown 前缀全量重渲染</div>
+      <div class="panel-desc">typedHtml = makeHtml(message.slice(0, ptr))，rAF + 20ms 步长 + 自适应批量 ceil(backlog/40)。<b>闭合的 ** 、表格分隔行到达后自动修正。</b></div>
+      <div class="stream-body" id="newBody"></div>
+      <div class="statusbar"><span>showdown输入(每帧整段前缀): <b id="newInput" style="color:#00b894">-</b></span><span>ptr: <b id="newPtr">0</b></span><span>帧解析次数: <b id="newParses">0</b></span><span id="newFix">语法正确率: -</span></div>
+    </section>
+  </div>
+
+  <div class="legend" id="legend">
+    观察点：① 左侧 <code>**加粗**</code> 全程以 <code>**</code> 原文呈现、表格竖排错乱，直到流结束"突跳"为正确格式；② 右侧表格首行先以段落渲染，<code>|---|</code> 分隔行流到的 1~2 帧后自动重排为表格；③ 右侧打字末帧 = makeHtml(完整 message)，与收尾常态渲染一致，无 DOM 翻转。
+  </div>
+
+  <div class="code" id="coreCode">const TYPE_STEP = 20;            // ms/帧
+const TYPE_BATCH_MIN = 2, TYPE_BATCH_MAX = 12;
+
+function typingFrame() {
+  if (typingPtr < target.message.length) {
+    const backlog = target.message.length - typingPtr;
+    const batch = Math.min(
+      Math.max(TYPE_BATCH_MIN, Math.ceil(backlog / 40)),
+      TYPE_BATCH_MAX, backlog
+    );
+    typingPtr += batch;
+    // 关键：对原始 markdown 前缀整体转换（不是切 HTML！）
+    typedHtml.value = makeHtml(target.message.slice(0, typingPtr));
+  } else if (!isStreaming) {
+    typedHtml.value = makeHtml(target.message);  // 与终态渲染一致
+    stopTyping();
+  }
+  raf = requestAnimationFrame(typingFrame);
+}</div>
+
+<script>
+/* ================= 公共材料 ================= */
+const SAMPLE_MARKDOWN = [
+  '# 项目周报（第 43 周）',
+  '',
+  '本周核心结论：**打字机阶段渲染已根治**，收到增量即可正确渲染。',
+  '',
+  '## 关键指标',
+  '',
+  '| 指标 | 旧方案 | 新方案 |',
+  '| --- | --- | --- |',
+  '| 首次正确渲染 | 流结束时 | 40~60ms 内 |',
+  '| 终局 DOM 突变 | 有 | 无 |',
+  '',
+  '### 执行事项',
+  '',
+  '- 移除 tokenQueue 一套管线',
+  '- 打字指针改指原始 markdown 前缀',
+  '- 流式展示层与内容累积层解耦'
+].join('\n');
+
+/* showdown 单例（与 chatRender.ts 的 makeHtml 同思路） */
+let converter = null;
+try {
+  converter = new showdown.Converter({
+    tables: true, simpleLineBreaks: true, openLinksInNewWindow: true
+  });
+} catch (e) { /* CDN 未加载时走 fallback */ }
+
+/* 极简降级渲染器：仅覆盖 demo 中出现的语法 */
+function fallbackMakeHtml(md) {
+  const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  const inline = s => esc(s)
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/`(.+?)`/g, '<code>$1</code>');
+  const lines = md.split('\n');
+  let html = '', i = 0, inTable = false;
+  const closeTable = () => { if (inTable) { html += '</tbody></table>'; inTable = false; } };
+  while (i < lines.length) {
+    const line = lines[i];
+    if (/^\s*\|.*\|\s*$/.test(line)) {
+      const cells = line.trim().replace(/^\||\|$/g,'').split('|');
+      if (/^[\s|:-]+$/.test(line) && inTable) { i++; continue; }
+      if (/^[\s|:-]+$/.test(line) && !inTable) {
+        // 分隔行：把上一行升级为表头
+        const prev = lines[i-1];
+        if (prev && /^\s*\|.*\|\s*$/.test(prev)) { /* 已按 body 输出，简化不做升级 */ }
+        i++; continue;
+      }
+      if (!inTable) { html += '<table><tbody>'; inTable = true; }
+      html += '<tr>' + cells.map(c => '<td>' + inline(c.trim()) + '</td>').join('') + '</tr>';
+      i++; continue;
+    }
+    closeTable();
+    if (/^#\s+/.test(line)) html += '<h1>' + inline(line.replace(/^#\s+/,'')) + '</h1>';
+    else if (/^##\s+/.test(line)) html += '<h2>' + inline(line.replace(/^##\s+/,'')) + '</h2>';
+    else if (/^###\s+/.test(line)) html += '<h3>' + inline(line.replace(/^###\s+/,'')) + '</h3>';
+    else if (/^-\s+/.test(line)) html += '<li>' + inline(line.replace(/^-\s+/,'')) + '</li>';
+    else if (line.trim() === '') html += '<br/>';
+    else html += '<p>' + inline(line) + '</p>';
+    i++;
+  }
+  return html;
+}
+const makeHtml = md => converter ? converter.makeHtml(md) : fallbackMakeHtml(md);
+
+/* 是否"语法已正确"的启发式：检查整个前缀所含的语法结构在 HTML 中成立的数量 */
+function syntaxScore(md) {
+  const total = ((md.match(/\*\*/g) || []).length / 2)
+    + (/^\s*\|.*\|/m.test(md) ? 1 : 0)
+    + ((md.match(/^\s*#{1,3}\s/m) || []).length)
+    + ((md.match(/^\s*-\s/m) || []).length);
+  const html = makeHtml(md);
+  let done = 0;
+  done += Math.floor(((html.match(/<strong[^>]*>/g) || []).length));
+  done += /<table/.test(html) ? 1 : 0;
+  done += (html.match(/<h[123][^>]*>/g) || []).length;
+  done += (html.match(/<li>/g) || []).length;
+  return { total, done };
+}
+
+/* ================= 模拟流（共用一条内容层） ================= */
+const DELTAS = [];
+{
+  // 按 3~5 字切片模拟服务端 delta；newLine 语义简化为拼接换行
+  let i = 0;
+  while (i < SAMPLE_MARKDOWN.length) {
+    const len = 3 + Math.floor(Math.random() * 3);
+    DELTAS.push(SAMPLE_MARKDOWN.slice(i, i + len));
+    i += len;
+  }
+}
+
+/* ================= 状态 ================= */
+let fullMessage = '';   // 内容累积层（两条管线共享，等价 item.message += delta）
+let rafId = null;
+let running = false;
+let paused = false;
+let deltaIdx = 0;
+let frameTimer = null;
+let frameTick = 0;
+
+/* --- 旧管线状态：tokenQueue --- */
+let tokenQueue = [];    // HTML 片段
+let oldDeltaCount = 0;
+
+/* --- 新管线状态：markdown 前缀打字机 --- */
+let typingPtr = 0;
+let newParseCount = 0;
+const TYPE_STEP = 20;
+const TYPE_BATCH_MIN = 2, TYPE_BATCH_MAX = 12;
+
+/* ================= 渲染 ================= */
+const $oldBody = document.getElementById('oldBody');
+const $newBody = document.getElementById('newBody');
+const speedBox = document.getElementById('speed');
+
+function renderOld() {
+  // 旧管线：逐 token 弹出 HTML 碎片拼接（真实实现按打字速度弹出若干 token）
+  let out = '';
+  const perFrame = 3;
+  for (let n = 0; n < perFrame && tokenQueue.length; n++) {
+    const head = tokenQueue[0];
+    if (head.length === 0) { tokenQueue.shift(); continue; }
+    out += head.charAt(0);
+    tokenQueue[0] = head.slice(1);
+  }
+  $oldBody.innerHTML += out;
+  $oldBody.scrollTop = $oldBody.scrollHeight;
+  document.getElementById('oldQueue').textContent = tokenQueue.join('').length;
+  document.getElementById('oldStat').textContent = 'delta数: ' + oldDeltaCount;
+  const s = syntaxScore(fullMessage);
+  document.getElementById('oldFix').textContent = '语法正确率: ' + s.total + '/' + s.total + (running ? '（仅流结束才达成）' : '');
+  // 语法正确率栏：旧管线实际展示的应是片状 HTML，这里统计其"已渲染出的正确结构"
+  const shownHtmlOk = (($oldBody.innerHTML.match(/<strong/g)||[]).length + /<table/.test($oldBody.innerHTML) && ($oldBody.innerHTML.match(/<tr/g)||[]).length > 2);
+  document.getElementById('oldFix').innerHTML = running
+    ? '<span class="warn">展示中含未闭合语法碎片</span>' : '流结束，切换全量渲染（突跳）';
+}
+
+function renderNew() {
+  // 新管线继承自 typingFrame 的双步设计：外层内容层速度由"流"推进，展示层由 ptr 追
+  const backlog = fullMessage.length - typingPtr;
+  if (backlog > 0) {
+    const batch = Math.min(
+      Math.max(TYPE_BATCH_MIN, Math.ceil(backlog / 40)),
+      TYPE_BATCH_MAX, backlog
+    );
+    typingPtr += batch;
+    newParseCount++;
+    $newBody.innerHTML = makeHtml(fullMessage.slice(0, typingPtr)); // 前缀全量重渲染
+    $newBody.scrollTop = $newBody.scrollHeight;
+    const feed = fullMessage.slice(0, typingPtr);
+    const short = feed.length > 46 ? ('…' + feed.slice(-45)) : feed;
+    document.getElementById('newInput').textContent =
+      '⟨开头→ptr 全文⟩' + JSON.stringify(short);
+    document.getElementById('newPtr').textContent = typingPtr;
+    document.getElementById('newParses').textContent = newParseCount;
+    const s = syntaxScore(fullMessage.slice(0, typingPtr));
+    document.getElementById('newFix').textContent =
+      '语法正确率: ' + s.done + '/' + s.total + (s.done < s.total ? '（随内容自动修正）' : '（已全对）');
+  } else if (deltaIdx >= DELTAS.length) {
+    $newBody.innerHTML = makeHtml(fullMessage);
+    stop('新管线已追平并收尾：末帧 = makeHtml(完整 message)，与终态一致 ✅');
+  }
+}
+
+function streamTick(schedule) {
+  // 模拟服务端推 delta 进内容层（CenterChart 的事件接入点）
+  frameTick++;
+  const speed = schedule ? +speedBox.value : 1;
+  for (let n = 0; n < speed && deltaIdx < DELTAS.length; n++) {
+    const delta = DELTAS[deltaIdx++];
+    fullMessage += delta;
+    /* 旧管线的接入：按 delta 独立转换后入队 → 语法上下文丢失 */
+    tokenQueue.push(makeHtml(delta));
+    oldDeltaCount++;
+    document.getElementById('oldInput').textContent = JSON.stringify(delta) + ' ← 孤立片段';
+  }
+  renderOld();
+  renderNew();
+  if (deltaIdx >= DELTAS.length && fullMessage.length - typingPtr <= 0 && tokenQueue.join('').length === 0) {
+    // 旧管线流结束：展示源切换 plainHtml → makeHtmlCached(item.message)，"突跳"
+    $oldBody.innerHTML = makeHtml(fullMessage);
+    document.getElementById('oldFix').textContent = '流结束瞬间切换为全量渲染 → 称为"突跳"';
+    stop('全部完成');
+    return;
+  }
+  if (schedule && running) frameTimer = setTimeout(streamTick, TYPE_STEP, true);
+}
+
+function start() {
+  reset();
+  running = true;
+  document.getElementById('btnStart').disabled = true;
+  streamTick(true);
+}
+
+function stop(msg) {
+  running = false;
+  document.getElementById('btnStart').disabled = false;
+  if (msg) console.log('[demo]', msg);
+}
+
+function reset() {
+  if (frameTimer) clearTimeout(frameTimer);
+  fullMessage = ''; deltaIdx = 0; oldDeltaCount = 0;
+  tokenQueue = []; typingPtr = 0; newParseCount = 0; running = false;
+  $oldBody.innerHTML = ''; $newBody.innerHTML = '';
+  document.getElementById('oldQueue').textContent = '0';
+  document.getElementById('oldStat').textContent = 'delta数: 0';
+  document.getElementById('newPtr').textContent = '0';
+  document.getElementById('newParses').textContent = '0';
+  document.getElementById('oldFix').textContent = '语法正确率: -';
+  document.getElementById('newFix').textContent = '语法正确率: -';
+  document.getElementById('oldInput').textContent = '-';
+  document.getElementById('newInput').textContent = '-';
+  document.getElementById('btnPause').textContent = '⏸ 暂停';
+  document.getElementById('btnStart').disabled = false;
+}
+
+document.getElementById('btnStart').onclick = start;
+document.getElementById('btnReset').onclick = reset;
+document.getElementById('btnPause').onclick = function () {
+  if (running) {
+    running = false;
+    if (frameTimer) clearTimeout(frameTimer);
+    this.textContent = '▶ 继续';
+  } else if (fullMessage.length !== 0) {
+    running = true;
+    this.textContent = '⏸ 暂停';
+    if (tokenQueue.join('').length === 0 && deltaIdx >= DELTAS.length && fullMessage.length - typingPtr <= 0) {
+      $oldBody.innerHTML = makeHtml(fullMessage);
+      document.getElementById('oldFix').textContent = '流结束瞬间切换为全量渲染 → 称为"突跳"';
+      stop('全部完成');
+    } else {
+      streamTick(true);
+    }
+  }
+};
+
+document.getElementById('btnStep').onclick = function () {
+  if (running || (deltaIdx >= DELTAS.length && fullMessage.length - typingPtr <= 0 && tokenQueue.join('').length === 0)) return;
+  streamTick(false);
+};
+speedBox.oninput = () => document.getElementById('speedVal').textContent = speedBox.value;
+</script>
+</body>
+</html>
