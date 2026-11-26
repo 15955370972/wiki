@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T03:25:05.712Z",
+  "generatedAt": "2026-11-26T05:08:56.767Z",
   "categories": [
     "组件封装",
     "Hooks 工具",
@@ -1111,6 +1111,12 @@
       "intro": "projects/wiki-blog/intro.md",
       "files": [
         {
+          "path": "index.html",
+          "name": "index.html",
+          "size": 413,
+          "lang": "html"
+        },
+        {
           "path": "intro.md",
           "name": "intro.md",
           "size": 929,
@@ -1123,9 +1129,51 @@
           "lang": "json"
         },
         {
+          "path": "README.md",
+          "name": "README.md",
+          "size": 559,
+          "lang": "markdown"
+        },
+        {
           "path": "src/api/content.ts",
           "name": "content.ts",
           "size": 1850,
+          "lang": "typescript"
+        },
+        {
+          "path": "src/components/CodeBlock.tsx",
+          "name": "CodeBlock.tsx",
+          "size": 2032,
+          "lang": "tsx"
+        },
+        {
+          "path": "src/components/CodeBrowser.tsx",
+          "name": "CodeBrowser.tsx",
+          "size": 4868,
+          "lang": "tsx"
+        },
+        {
+          "path": "src/components/MarkdownView.tsx",
+          "name": "MarkdownView.tsx",
+          "size": 872,
+          "lang": "tsx"
+        },
+        {
+          "path": "src/components/PdfReader.tsx",
+          "name": "PdfReader.tsx",
+          "size": 4730,
+          "lang": "tsx"
+        },
+        {
+          "path": "src/components/Placeholder.tsx",
+          "name": "Placeholder.tsx",
+          "size": 496,
+          "lang": "tsx"
+        },
+        {
+          "path": "src/hooks/useToc.ts",
+          "name": "useToc.ts",
+          "size": 707,
           "lang": "typescript"
         },
         {
@@ -1141,10 +1189,94 @@
           "lang": "tsx"
         },
         {
+          "path": "src/pages/Books/List.tsx",
+          "name": "List.tsx",
+          "size": 2819,
+          "lang": "tsx"
+        },
+        {
+          "path": "src/pages/Books/Reader.tsx",
+          "name": "Reader.tsx",
+          "size": 2354,
+          "lang": "tsx"
+        },
+        {
+          "path": "src/pages/Home/index.tsx",
+          "name": "index.tsx",
+          "size": 1249,
+          "lang": "tsx"
+        },
+        {
+          "path": "src/pages/Notes/Detail.tsx",
+          "name": "Detail.tsx",
+          "size": 9103,
+          "lang": "tsx"
+        },
+        {
+          "path": "src/pages/Notes/List.tsx",
+          "name": "List.tsx",
+          "size": 3650,
+          "lang": "tsx"
+        },
+        {
+          "path": "src/pages/Projects/Detail.tsx",
+          "name": "Detail.tsx",
+          "size": 3261,
+          "lang": "tsx"
+        },
+        {
+          "path": "src/pages/Projects/List.tsx",
+          "name": "List.tsx",
+          "size": 2269,
+          "lang": "tsx"
+        },
+        {
+          "path": "src/pages/Snippets/Detail.tsx",
+          "name": "Detail.tsx",
+          "size": 4521,
+          "lang": "tsx"
+        },
+        {
+          "path": "src/pages/Snippets/List.tsx",
+          "name": "List.tsx",
+          "size": 4212,
+          "lang": "tsx"
+        },
+        {
+          "path": "src/styles/global.css",
+          "name": "global.css",
+          "size": 505,
+          "lang": "css"
+        },
+        {
+          "path": "src/styles/hljs.css",
+          "name": "hljs.css",
+          "size": 1635,
+          "lang": "css"
+        },
+        {
+          "path": "src/styles/markdown.css",
+          "name": "markdown.css",
+          "size": 1955,
+          "lang": "css"
+        },
+        {
           "path": "src/theme/ThemeProvider.tsx",
           "name": "ThemeProvider.tsx",
           "size": 2675,
           "lang": "tsx"
+        },
+        {
+          "path": "tsconfig.json",
+          "name": "tsconfig.json",
+          "size": 577,
+          "lang": "json"
+        },
+        {
+          "path": "vite.config.ts",
+          "name": "vite.config.ts",
+          "size": 306,
+          "lang": "typescript"
         }
       ],
       "updatedAt": "2026-11-26"

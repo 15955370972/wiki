@@ -1,0 +1,89 @@
+/* 自定义 highlight.js 配色：跟随亮暗模式（变量在 ThemeProvider 写入的 data-theme 上切换） */
+
+.hljs {
+  color: var(--code-fg);
+  background: transparent;
+}
+.hljs-comment,
+.hljs-quote {
+  color: var(--code-comment);
+  font-style: italic;
+}
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-doctag,
+.hljs-formula {
+  color: var(--code-keyword);
+}
+.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-meta-string {
+  color: var(--code-string);
+}
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-type,
+.hljs-params {
+  color: var(--code-number);
+}
+.hljs-title,
+.hljs-title.class_,
+.hljs-title.function_,
+.hljs-section,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class {
+  color: var(--code-title);
+}
+.hljs-attr,
+.hljs-attribute,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link {
+  color: var(--code-attr);
+}
+.hljs-tag {
+  color: var(--code-fg);
+}
+.hljs-emphasis {
+  font-style: italic;
+}
+.hljs-strong {
+  font-weight: 600;
+}
+.hljs-deletion {
+  color: var(--code-deletion);
+}
+.hljs-addition {
+  color: var(--code-addition);
+}
+
+:root {
+  --code-fg: #24292f;
+  --code-comment: #6e7781;
+  --code-keyword: #cf222e;
+  --code-string: #0a3069;
+  --code-number: #0550ae;
+  --code-title: #8250df;
+  --code-attr: #116329;
+  --code-deletion: #82071e;
+  --code-addition: #116329;
+  --code-bg: #f6f8fa;
+}
+[data-theme='dark'] {
+  --code-fg: #d7dce2;
+  --code-comment: #7d8590;
+  --code-keyword: #ff7b72;
+  --code-string: #a5d6ff;
+  --code-number: #79c0ff;
+  --code-title: #d2a8ff;
+  --code-attr: #7ee787;
+  --code-deletion: #ffa198;
+  --code-addition: #7ee787;
+  --code-bg: #1c2128;
+}
